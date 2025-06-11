@@ -1,0 +1,34 @@
+:root {
+    --main-color: #23395B;
+    --main-hover: #1b2e4b;
+  }
+
+  .btn-main {
+    background-color: var(--main-color);
+    color: white;
+  }
+
+  .btn-main:hover {
+    background-color: var(--main-hover);
+    color: white;
+  }
+
+  .btn-outline-main {
+    border-color: var(--main-color);
+    color: var(--main-color);
+    background-color: transparent;
+  }
+
+  .btn-outline-main:hover {
+    background-color: var(--main-color);
+    color: white;
+  }
+
+  .btn-active {
+    background-color: var(--main-color);
+    color: white;
+  }
+
+  .text-main {
+    color: var(--main-color);
+  }

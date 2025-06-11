@@ -1,0 +1,51 @@
+:root {
+    --azul-oscuro: #0f2027;
+    --azul-medio: #203a43;
+    --azul-claro: #2c5364;
+  }
+
+  body {
+    background: var(--azul-claro);
+  }
+
+  .bg-primary-blue {
+    background: var(--azul-medio);
+  }
+
+  .sidebar {
+    width: 260px;
+  }
+
+  .offcanvas-md {
+    border: none;
+  }
+
+  .btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .btn-outline-danger:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+
+
+  /* Mostrar tabla en pantallas medianas o más grandes */
+    .table-responsive-custom { display: none; }
+    .card-table-view { display: block; }
+
+
+  @media (min-width: 820px) {
+    .offcanvas-md {
+      transform: none;
+      visibility: visible !important;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .offcanvas-backdrop {
+      display: none;
+    }
+
+    .table-responsive-custom { display: block; }
+      .card-table-view { display: none; }
+  }
